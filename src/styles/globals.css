@@ -8,28 +8,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  transition: background 0.5s linear;
+  min-height: 70vh;
+  transition: 0.5s;
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.dark {
-  background: #232c35;
+#__next {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#btn-checkbox {
+.btn-theme {
+  position: absolute;
+  right: 3%;
+  top: 7%;
+}
+.btn-theme #btn-checkbox {
   opacity: 0;
   position: absolute;
 }
-#btn-checkbox:checked + .label .ball {
+.btn-theme #btn-checkbox:checked + .label .ball {
   transform: translateX(29px);
   background: gray;
 }
-#btn-checkbox:checked + .label {
+.btn-theme #btn-checkbox:checked + .label {
   background: rgb(244, 244, 244);
   border: 1px solid gray;
 }
-
-.label {
+.btn-theme .label {
   background-color: #111;
   border-radius: 50px;
   cursor: pointer;
@@ -42,10 +51,10 @@ body {
   border: 1px solid rgb(55, 55, 55);
   transition: 0.5s linear;
 }
-.label img {
+.btn-theme .label img {
   width: 20px;
 }
-.label .ball {
+.btn-theme .label .ball {
   position: absolute;
   background: white;
   border-radius: 50%;
@@ -53,5 +62,34 @@ body {
   height: 25px;
   top: 2.3px;
   left: 2.3px;
+  transition: 1s;
+}
+
+.container {
+  width: 60%;
+  height: 300px;
+  background-color: var(--bg-panel);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 65px 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  transition: 0.5s;
+  position: relative;
+}
+.container h1 {
+  color: var(--color-headings);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  transition: 1s;
+}
+.container p {
+  color: var(--color-text);
+  width: 70%;
+  text-align: center;
+  font-size: 17px;
+  line-height: 26px;
   transition: 1s;
 }/*# sourceMappingURL=globals.css.map */
