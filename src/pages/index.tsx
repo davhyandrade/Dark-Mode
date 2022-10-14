@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image';
 import { useState } from 'react'
 import { createGlobalStyle } from 'styled-components'; 
 const Home: NextPage = () => {
@@ -30,8 +31,8 @@ const Home: NextPage = () => {
       <div className="btn-theme">
         <input onClick={() => console.log(isActiveThemeDarkOrLight)} onChange={(event) => setIsActiveThemeDarkOrLight(event.target.checked)} type="checkbox" id="btn-checkbox" />
         <label className='label' htmlFor="btn-checkbox">
-          <img src="https://i.postimg.cc/qqQgHzYh/image-removebg-preview-2022-10-13-T154928-853.png" alt="Sol" />
-          <img src="https://i.postimg.cc/SxM1Z8HK/image-removebg-preview-2022-10-13-T154724-825.png" alt="Lua" />
+          <Image src="https://i.postimg.cc/qqQgHzYh/image-removebg-preview-2022-10-13-T154928-853.png" alt="Sol" height={20} width={20} />
+          <Image src="https://i.postimg.cc/SxM1Z8HK/image-removebg-preview-2022-10-13-T154724-825.png" alt="Lua" height={20} width={20} />
           <div className="ball"></div>
         </label>
       </div>
