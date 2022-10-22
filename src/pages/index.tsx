@@ -13,14 +13,14 @@ const Home: NextPage = () => {
 
   const GlobalStyles = createGlobalStyle<IProps>`
     ${props => props.isActiveThemeDarkOrLight ? `
-      html {
+      :root {
         --bg-color: white;
         --bg-panel: #eeeeee;
         --color-headings: #f3920b;
         --color-text: #333;
       }
     ` : `
-      html {
+      :root {
         --bg-color: #202124;
         --bg-panel: #434343;
         --color-headings: #f3b20b;
