@@ -4,7 +4,7 @@
 
 ## Dark Mode
 
-<img src="https://i.postimg.cc/prgzH5Yy/bank-small.png" alt="bank-small" width="100%">
+![darkmode](https://user-images.githubusercontent.com/109045257/197402300-4a0a2b18-1db3-48c5-a015-62765b705507.png)
 
 Dark Mode, aplicação com opção de tema escuro ou claro.
 
