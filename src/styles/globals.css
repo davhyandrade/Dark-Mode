@@ -13,6 +13,11 @@ body {
   background-color: var(--bg-color);
   font-family: Arial, Helvetica, sans-serif;
 }
+@media only screen and (max-width: 800px) {
+  body {
+    min-height: 50vh;
+  }
+}
 
 #__next {
   width: 100%;
@@ -78,12 +83,27 @@ body {
   transition: 0.5s;
   position: relative;
 }
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 65px 30px;
+    margin-bottom: 0;
+  }
+}
 .container h1 {
   color: var(--color-headings);
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: normal;
   transition: 1s;
+}
+@media only screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
 }
 .container p {
   color: var(--color-text);
@@ -92,4 +112,11 @@ body {
   font-size: 17px;
   line-height: 26px;
   transition: 1s;
+}
+@media only screen and (max-width: 800px) {
+  .container p {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=globals.css.map */
