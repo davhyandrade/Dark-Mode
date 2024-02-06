@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       </Head>
       <GlobalStyles isActiveThemeDarkOrLight={isActiveThemeDarkOrLight}/>
       <div className='container'>
-        <h1>Title Container</h1>
+        <h1>Container Title</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
         <div className="btn-theme">
           <input onClick={() => console.log(isActiveThemeDarkOrLight)} onChange={(event) => setIsActiveThemeDarkOrLight(event.target.checked)} type="checkbox" id="btn-checkbox" />

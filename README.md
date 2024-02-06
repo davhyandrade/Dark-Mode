@@ -1,3 +1,9 @@
+<div align="right">
+  <sub>Create in</sub>  
+  
+  `13/10/2022`
+</div>
+
 # Modo escuro
 
 > Status: Concluded
